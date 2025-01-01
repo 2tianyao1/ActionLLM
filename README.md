@@ -5,7 +5,6 @@ This repository is the official implementation of ActionLLM. In this study, we i
 
 <div style="text-align:center">
 <img src="framework.png" alt="Illustrating the architecture of the proposed ActionLLM"/>
-<figcaption style="text-align: center;">The network architecture of ActionLLM</figcaption>
 </div>
 
 ## Environmental setup
