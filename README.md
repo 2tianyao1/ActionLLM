@@ -19,7 +19,7 @@ conda activate actionllm
 * Download the LLaMA-7b from https://huggingface.co/nyanko7/LLaMA-7B/tree/main .
 * Download the text_feature from https://pan.baidu.com/s/1nXMxt9-IrxGt-zvC1JV9XQ?pwd=iana .
 
-Create a directory './data' for the two datasets and LLaMA-7B. Please ensure the data structure is as below:
+Create a directory './data' for the two datasets , text feature and LLaMA-7B. Please ensure the data structure is as below:
 ```bash                        
     ├── data/                      
         ├── 50_salads/ 
