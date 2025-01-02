@@ -74,24 +74,23 @@ def main(args):
     res_des['checkpoint'] = args.ck_num
     obs_perc = [0.2, 0.3] 
     for obs_p in obs_perc:
-        # infer_one_epoch(model, device,video_test_list, obs_p, n_class, actions_dict,args,data_path,res_des)
         predict(model, video_test_list, args, obs_p, n_class, actions_dict, device, data_path,res_des,text_feature_path)
 
 
 
     # save results in Excel
-    # res_des = OrderedDict(res_des)
-    # data = [item for pair in res_des.items() for item in pair]
-    #
-    # file_path = args.pred_file
-    # sheet_name = 'Sheet1'
-    #
-    # workbook = load_workbook(file_path)
-    # sheet = workbook[sheet_name]
-    # start_row = sheet.max_row + 1
-    # sheet.append(data)
-    #
-    # workbook.save(file_path)
+    res_des = OrderedDict(res_des)
+    data = [item for pair in res_des.items() for item in pair]
+    
+    file_path = args.pred_file
+    sheet_name = 'Sheet1'
+    
+    workbook = load_workbook(file_path)
+    sheet = workbook[sheet_name]
+    start_row = sheet.max_row + 1
+    sheet.append(data)
+    
+    workbook.save(file_path)
 
 
 
