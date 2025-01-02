@@ -187,12 +187,7 @@ def predict(model, vid_list, args, obs_p, n_class, actions_dict, device, data_pa
 
             inputs_embeds = inputs.unsqueeze(0)
             text_features = text_features.unsqueeze(0)
-            # attention_mask = torch.full((1, inputs_embeds.size(1)), 1, device=inputs_embeds.device)
-            t1 = time.time()
             outputs = model(inputs_embeds=inputs_embeds, text_inputs_embeds=text_features, labels_action=None, past_labels=None, labels_duration=None,return_preds=True)
-            t2 = time.time()
-            latency = t2 - t1
-            print("LLMAction在对rgb-01-1进行推理时，所用的时间为:",latency)
             output_action = outputs['action']
             output_dur = outputs['duration']
             output_label = output_action.max(-1)[1]
