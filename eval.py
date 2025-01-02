@@ -10,7 +10,7 @@ import util.misc as misc
 from engine import predict
 
 
-from actionllm.mm_adaptation import LLMAction
+from actionllm.mm_adaptation import ActionLLM
 from util.action_tool import read_mapping_dict
 from util.opts import get_args_parser
 from collections import OrderedDict
@@ -59,7 +59,7 @@ def main(args):
     print("Predict with ", args.checkpoint_file)
 
 
-    model = LLMAction(args)
+    model = ActionLLM(args)
 
     checkpoint = torch.load(args.checkpoint_file, map_location="cpu")['model']
     model_dict = model.state_dict()
