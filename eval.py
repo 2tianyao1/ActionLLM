@@ -47,8 +47,6 @@ def main(args):
     video_file_test_path = os.path.join(data_path, 'splits', 'test.split' + split + '.bundle')
     video_file_test = open(video_file_test_path, 'r')
     video_test_list = video_file_test.read().split('\n')[:-1]
-    video_test_list = ['rgb-01-1.txt']
-    # video_test_list = ['P16_cam01_P16_cereals.txt', 'P16_cam01_P16_friedegg.txt', 'P16_cam01_P16_juice.txt', 'P16_cam01_P16_milk.txt']
 
     #Small Data Fitting
     video_file_path = os.path.join(data_path, 'splits', 'train.split' + str(1) + '.bundle')
@@ -57,8 +55,6 @@ def main(args):
 
     n_class = len(actions_dict) + 1  # 19+1
     pad_idx = n_class  # 20
-
-
 
     print("Predict with ", args.checkpoint_file)
 
@@ -76,7 +72,7 @@ def main(args):
 
     res_des = dict()
     res_des['checkpoint'] = args.ck_num
-    obs_perc = [0.2, 0.3]   #[0.2, 0.3]
+    obs_perc = [0.2, 0.3] 
     for obs_p in obs_perc:
         # infer_one_epoch(model, device,video_test_list, obs_p, n_class, actions_dict,args,data_path,res_des)
         predict(model, video_test_list, args, obs_p, n_class, actions_dict, device, data_path,res_des,text_feature_path)
