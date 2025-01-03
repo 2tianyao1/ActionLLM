@@ -15,7 +15,7 @@ conda activate actionllm
 ```
 
 ## Data
-* Download the datasets from https://mega.nz/file/O6wXlSTS#wcEoDT4Ctq5HRq_hV-aWeVF1_JB3cacQBQqOLjCIbc8 .   
+* Download the datasets from [dataset](https://mega.nz/file/O6wXlSTS#wcEoDT4Ctq5HRq_hV-aWeVF1_JB3cacQBQqOLjCIbc8) .   
 * Download the LLaMA-7b from https://huggingface.co/nyanko7/LLaMA-7B/tree/main .
 * Download the text_feature from https://pan.baidu.com/s/1nXMxt9-IrxGt-zvC1JV9XQ?pwd=iana .
 
