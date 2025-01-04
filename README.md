@@ -56,7 +56,7 @@ Create a directory './data' for the two datasets , text feature and LLaMA-7B. Pl
 >```
 
 ## Testing
-Download the checkpoint from https://pan.baidu.com/s/1P41BeTtxTebJP0OHXHXUSw?pwd=iana
+* Download the checkpoint from https://pan.baidu.com/s/1P41BeTtxTebJP0OHXHXUSw?pwd=iana
 
 > ### 1. Breakfast
 > ```bash
