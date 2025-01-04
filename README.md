@@ -1,6 +1,6 @@
 # Multimodal Large Models Are Effective Action Anticipators
 
-This repository is the official implementation of ActionLLM. In this study, we introduce the ActionLLM, which leverages Large Language Models (LLMs) to anticipate long-term actions by treating video sequences as successive tokens. By simplifying the model architecture and incorporating a Cross-Modality Interaction Block, it enhances multimodal semantic understanding and achieves superior performance on benchmark datasets. Paper from [https://arxiv.org/submit/6105540/view](https://arxiv.org/submit/6105540/view).
+This repository is the official implementation of ActionLLM. In this study, we introduce the ActionLLM, which leverages Large Language Models (LLMs) to anticipate long-term actions by treating video sequences as successive tokens. By simplifying the model architecture and incorporating a Cross-Modality Interaction Block, it enhances multimodal semantic understanding and achieves superior performance on benchmark datasets. Paper from [https://arxiv.org/abs/2501.00795](https://arxiv.org/abs/2501.00795).
 
 
 <div style="text-align:center">
